@@ -1,16 +1,16 @@
 import { Inter } from "next/font/google";
+import Table from "../../components/Table/table.js";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+    <><div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
       <img
         src="/img/beams.jpg"
         alt=""
         className="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"
-        width="1308"
-      />
+        width="1308" />
       <div className="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
       <div className="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
         <div className="mx-auto max-w-md">
@@ -61,5 +61,10 @@ export default function Home() {
         </div>
       </div>
     </div>
+    <p>Holiwis</p>
+    <Table />
+    <p>pony tail</p>
+    <table className="ui celled table"><thead className=""><tr className=""><th className="">Name</th><th className="">Status</th><th className="">Notes</th></tr></thead><tbody className=""><tr className=""><td className="">No Name Specified</td><td className="">Unknown</td><td className="negative">None</td></tr><tr className="positive"><td className="">Jimmy</td><td className=""><i aria-hidden="true" className="checkmark icon"></i>Approved</td><td className="">None</td></tr><tr className=""><td className="">Jamie</td><td className="">Unknown</td><td className="positive"><i aria-hidden="true" className="close icon"></i>Requires call</td></tr><tr className="negative"><td className="">Jill</td><td className="">Unknown</td><td className="">None</td></tr></tbody></table>
+    </>
   );
 }
