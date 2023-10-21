@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import Table from "../../components/Table/table.js";
+import Menu from "../../components/Menu/menu.js"
+import Tab from "../../components/Tab/tab.js"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -64,7 +66,8 @@ export default function Home() {
     <p>Holiwis</p>
     <Table />
     <p>pony tail</p>
-    <table className="ui celled table"><thead className=""><tr className=""><th className="">Name</th><th className="">Status</th><th className="">Notes</th></tr></thead><tbody className=""><tr className=""><td className="">No Name Specified</td><td className="">Unknown</td><td className="negative">None</td></tr><tr className="positive"><td className="">Jimmy</td><td className=""><i aria-hidden="true" className="checkmark icon"></i>Approved</td><td className="">None</td></tr><tr className=""><td className="">Jamie</td><td className="">Unknown</td><td className="positive"><i aria-hidden="true" className="close icon"></i>Requires call</td></tr><tr className="negative"><td className="">Jill</td><td className="">Unknown</td><td className="">None</td></tr></tbody></table>
+    <Menu />
+    <Tab />
     </>
   );
 }
