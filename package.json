@@ -10,7 +10,9 @@
     "lint:fix": "eslint src/ --fix"
   },
   "dependencies": {
-    "next": "latest",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "next": "^13.5.6",
     "react": "latest",
     "react-dom": "latest",
     "semantic-ui-css": "^2.5.0",
